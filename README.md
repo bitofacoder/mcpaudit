@@ -8,6 +8,8 @@ MCP servers run with your privileges — they can shell out, write files, and ho
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-Security-red.svg)](https://github.com/modelcontextprotocol)
 
+![mcpaudit scanning a set of MCP server configs and reporting plaintext secrets, an insecure transport, and unpinned packages](assets/demo.gif)
+
 ## Quick start
 
 No install required:
