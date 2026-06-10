@@ -28,7 +28,7 @@ const HELP = `
 ${chalk.bold('mcpaudit')} — security scanner for your installed MCP servers
 
 ${chalk.bold('Usage')}
-  npx mcpaudit [options]
+  npx @bitofacoder/mcpaudit [options]
 
 ${chalk.bold('Options')}
   --deep            Launch each stdio server and audit its live tool list
