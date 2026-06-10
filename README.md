@@ -4,7 +4,7 @@
 
 MCP servers run with your privileges — they can shell out, write files, and hold your API tokens. Most people wire up a handful from random repos and never look back. `mcpaudit` reads your existing client configs and tells you, in one command, where the risk is.
 
-[![npm version](https://img.shields.io/npm/v/mcpaudit.svg)](https://www.npmjs.com/package/mcpaudit)
+[![npm version](https://img.shields.io/npm/v/@bitofacoder/mcpaudit.svg)](https://www.npmjs.com/package/@bitofacoder/mcpaudit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-Security-red.svg)](https://github.com/modelcontextprotocol)
 
@@ -13,7 +13,7 @@ MCP servers run with your privileges — they can shell out, write files, and ho
 No install required:
 
 ```bash
-npx mcpaudit
+npx @bitofacoder/mcpaudit
 ```
 
 It auto-discovers configs for **Claude Desktop, Claude Code, Cursor, and Windsurf**, then prints a severity-ranked report.
@@ -58,11 +58,11 @@ It auto-discovers configs for **Claude Desktop, Claude Code, Cursor, and Windsur
 ## Usage
 
 ```bash
-npx mcpaudit                       # static scan of all discovered configs
-npx mcpaudit --deep                # also launch each server and audit its tools
-npx mcpaudit --config ./mcp.json   # audit an extra config file (repeatable)
-npx mcpaudit --json                # machine-readable output
-npx mcpaudit --fail-on-high        # exit 1 if any high-severity issue (for CI)
+npx @bitofacoder/mcpaudit                       # static scan of all discovered configs
+npx @bitofacoder/mcpaudit --deep                # also launch each server and audit its tools
+npx @bitofacoder/mcpaudit --config ./mcp.json   # audit an extra config file (repeatable)
+npx @bitofacoder/mcpaudit --json                # machine-readable output
+npx @bitofacoder/mcpaudit --fail-on-high        # exit 1 if any high-severity issue (for CI)
 ```
 
 ### In CI
@@ -70,7 +70,7 @@ npx mcpaudit --fail-on-high        # exit 1 if any high-severity issue (for CI)
 Gate a repo's MCP config on every push:
 
 ```yaml
-- run: npx -y mcpaudit --config .mcp.json --fail-on-high
+- run: npx -y @bitofacoder/mcpaudit --config .mcp.json --fail-on-high
 ```
 
 ## Why deep scan matters

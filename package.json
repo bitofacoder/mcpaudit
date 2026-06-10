@@ -1,5 +1,5 @@
 {
-  "name": "mcpaudit",
+  "name": "@bitofacoder/mcpaudit",
   "version": "0.1.0",
   "description": "Security scanner for your installed MCP servers. Finds shell-exec tools, plaintext secrets, and unpinned supply chains across Claude Desktop, Claude Code, Cursor, and Windsurf configs.",
   "main": "dist/index.js",
